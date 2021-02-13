@@ -1,17 +1,17 @@
 <div id="ebook-includes">
     <script type="text/javascript">
-    let ebookPath = "{{page.ebook.ebook_path}}" || "{{page.ebook_path}}";
-    let style_path = "{{page.ebook_iframe_custom_stylesheet}}" || "/assets/jekyll-ebookreader-assets/ebookreader_iframe.css"
-    let eBookRenderOptions = {
+    var ebookPath = "{{page.ebook.ebook_path}}" || "{{page.ebook_path}}";
+    var style_path = "{{page.ebook_iframe_custom_stylesheet}}" || "/assets/jekyll-ebookreader-assets/ebookreader_iframe.css";
+    var eBookRenderOptions = {
         flow: "scrolled-doc",
         ignoreClass: "annotator-hl",
         width: "100%",
         height: "100%",
         stylesheet: style_path
-    }
+    };
     document.addEventListener(
         'DOMContentLoaded',
-        () => launchEpubJS(ebookPath, eBookRenderOptions),
+        function(){launchEpubJS(ebookPath, eBookRenderOptions)},
         false);
     </script>
     <a id="opener">
@@ -34,7 +34,7 @@
             <i class="material-icons">close</i>
         </a>
         <h1 id="title">...</h1>
-        <image id="cover" width="150px" />
+        <image id="cover" width="150px" alt="cover_image" />
         <h2 id="author">...</h2>
         <ul id="toc"></ul>
     </div>

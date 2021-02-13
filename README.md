@@ -4,24 +4,36 @@ This plugin allows you to embed eBooks in your site on any page or post!
 
 It uses [EPUB.js](http://futurepress.org/) to do so.
 
+You can see a [live demo here](https://www.quinnbatten.com/jekyll-ebook-reader-example) as well!
 
 ## Installation
 
-Add this line to your application's Gemfile:
+You need to have Jekyll installed, of course, and have your Jekyll site all set up. If you haven't used plugins with Jekyll before, you should read [their docs on plugins](https://jekyllrb.com/docs/plugins/).
+
+Add this line to your site's Gemfile:
 
 ```ruby
 gem 'jekyll-ebook_reader'
 ```
 
+Then, go to your _config.yml, and addthe following (of course if you have a plugins item, just append the ebookreader line to it.)
+
+```yaml
+plugins:
+  - jekyll/ebook_reader
+```
+
+*BIG IMPORTANT NOTE:* Make sure you insert that exact line! It's not `- jekyll-ebook_reader`, nor is it `- ebook_reader`, those won't work.
+
 And then execute:
 
     $ bundle install
 
-Or install it yourself as:
+Now you should be good to go!
 
-    $ gem install jekyll-ebook_reader
+# Usage
 
-## Usage
+## Quickstart
 
 To embed a book on a page/post:
 1. Add your ebook file to your `/assets` folder. Take note of the path to your book, starting at the base of your site. (E.g. it may be '/assets/myBook.epub', or if you put it inside an "ebooks" subfolder, it might be 'assets/ebooks/myBook.epub'.)
@@ -47,12 +59,6 @@ Gosh this is my favorite book!!
 ```
 
 
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
