@@ -30,5 +30,4 @@ Gem::Specification.new do |spec|
   spec.add_dependency "jekyll", ">= 3.0", "< 5.0"
   spec.add_dependency "fileutils", ">= 1.1.0", "<= 1.5.0"
 
-  spec.add_development_dependency "bundler"
 end

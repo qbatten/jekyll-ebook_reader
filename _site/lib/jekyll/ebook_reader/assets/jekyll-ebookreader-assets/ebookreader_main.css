@@ -1,0 +1,369 @@
+#ebook-includes #ebook-main {
+    /*position: absolute;*/
+    top: 50px;
+    left: 3%;
+    width: calc(100% - 100px);
+    max-width: 3000px;
+    z-index: 2;
+    transition: left .15s cubic-bezier(.55, 0, .2, .8) .08s;
+}
+
+
+#ebook-includes div#bottom-nav-arrows {
+
+}
+
+#ebook-includes svg {
+    display: block;
+}
+
+#ebook-includes .close-x {
+    stroke: #cccddd;
+    fill: transparent;
+    stroke-linecap: round;
+    stroke-width: 5;
+}
+
+#ebook-includes .close-x:hover {
+    stroke: #fff;
+}
+
+#ebook-includes #viewer {
+    overflow: hidden;
+    width: 100%;
+    min-width: 500px;
+    max-width: 1000px;
+    background-color: white;
+    box-shadow: 0 0 4px #ccc;
+    margin: 20px 20px 20px 20px;
+    padding: 40px 40px;
+}
+
+
+#ebook-includes #navigation {
+    width: 400px;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    right: 100%;
+
+    background: #ECECEC;
+    min-height: 100%;
+    height: 100%;
+    height: 100vh;
+
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding: 9px;
+    padding-top: 10px;
+
+    transition: left .2s ease-out;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#ebook-includes #navigation.open {
+    left: calc(100% - 410px);
+    z-index: 4;
+}
+
+#ebook-includes #navigation.fixed {
+    position: fixed;
+}
+
+
+#ebook-includes #navigation h1 {
+    width: 200px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+#ebook-includes #navigation h2 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #B0B0B0;
+    margin-bottom: 20px;
+}
+
+#ebook-includes #navigation ul {
+    padding-left: 28px;
+    margin-left: 0;
+}
+
+#ebook-includes #navigation ul li {
+    list-style: decimal;
+    margin-bottom: 10px;
+    color: #585858;
+    font-size: 1em;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#ebook-includes #navigation ul li a {
+    color: #585858;
+    text-decoration: none;
+}
+
+#ebook-includes #navigation ul li a:hover {
+    color: #585858;
+    text-decoration: underline;
+}
+
+#ebook-includes #navigation ul li a.active {
+    color: #000;
+    font-weight: 400;
+}
+
+#ebook-includes #navigation #author {
+    text-align: center;
+}
+
+#ebook-includes #cover {
+    display: inline;
+}
+
+#ebook-includes #ebook-main {
+    margin-top: 60px;
+}
+
+#ebook-includes #pagination {
+    text-align: center;
+    margin: 20px;
+    /*padding: 0 50px;*/
+}
+
+#ebook-includes .arrow:hover {
+    color: #777;
+}
+
+#ebook-includes .arrow:active {
+    color: #000;
+}
+
+#ebook-includes .arrow .material-icons {
+    font-size: 64px;
+}
+
+#ebook-includes #prev {
+    /*float: left;*/
+}
+
+#ebook-includes #next {
+    /*float: right;*/
+}
+
+#ebook-includes #toc {
+    display: block;
+    margin: 10px auto;
+}
+
+
+#ebook-includes #navigation #cover {
+    display: block;
+    margin: 24px auto;
+}
+
+#ebook-includes #closer {
+    position: absolute;
+    padding: 12px;
+    left: 0;
+    top: 0;
+    color: #333;
+    cursor: pointer;
+}
+
+#ebook-includes #closer .material-icons {
+    color: #333;
+}
+
+#ebook-includes #opener {
+    position: sticky;
+    float: right;
+    top: 0;
+    right: 20px;
+    padding: 10px;
+    stroke: #E2E2E2;
+    fill: #E2E2E2;
+    z-index: 4;
+
+}
+
+#ebook-includes #opener:hover {
+    stroke: #777;
+    fill: #777;
+}
+
+
+#ebook-includes #hiddenTitle {
+    display: none;
+}
+
+#ebook-includes #title {
+    width: 900px;
+    min-height: 18px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 16px;
+    color: #E2E2E2;
+    font-weight: 400;
+}
+
+#ebook-includes #title:hover {
+    color: #777;
+}
+
+#ebook-includes #prev {
+    left: 0;
+}
+
+#ebook-includes #next {
+    right: 0;
+}
+
+#ebook-includes #toc {
+    display: block;
+    margin: 10px auto;
+}
+
+#ebook-includes #viewer.spreads {
+    width: 84vw;
+    height: 80vh;
+    box-shadow: 0 0 4px #ccc;
+    border-radius: 5px;
+    padding: 0;
+    position: relative;
+    margin: 10vh auto;
+    background: white;
+    top: 0;
+}
+
+#ebook-includes #viewer.loading {
+    background: white url('ajax-loader.gif') center center no-repeat;
+}
+
+#ebook-includes div#bottom-nav-arrows {
+    height: 100px;
+    width: 100%;
+}
+
+#ebook-includes .arrow {
+    font-size: 1rem;
+    margin: 14px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #ccc;
+    margin-bottom: 50px;
+    width: calc(50% - 60px);
+}
+
+#ebook-includes .navlink {
+    margin: 14px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #ccc;
+}
+
+#ebook-includes .arrow:hover,
+#ebook-includes .navlink:hover {
+    color: #777;
+}
+
+#ebook-includes .arrow:active,
+#ebook-includes .navlink:hover {
+    color: #000;
+}
+
+#ebook-includes #book-wrapper {
+    width: 480px;
+    height: 640px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin: 28px auto;
+    background: #fff;
+    border-radius: 0 5px 5px 0;
+    position: absolute;
+}
+
+#ebook-includes #book-viewer {
+    width: 480px;
+    height: 660px;
+    margin: -30px auto;
+    -moz-box-shadow: inset 10px 0 20px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: inset 10px 0 20px rgba(0, 0, 0, .1);
+    box-shadow: inset 10px 0 20px rgba(0, 0, 0, .1);
+}
+
+#ebook-includes #book-viewer iframe {
+    padding: 40px 40px;
+}
+
+#ebook-includes #controls {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    width: 400px;
+    margin-left: -200px;
+    text-align: center;
+    display: none;
+}
+
+#ebook-includes>#controls>input[type=range] {
+    width: 400px;
+}
+
+
+/* Navigation  */
+
+@media screen and (max-width: 600px) {
+    #ebook-includes #navigation {
+        width: 100%;
+    }
+
+    #ebook-includes #navigation.open {
+        left: 0px;
+    }
+
+    #ebook-includes #ebook-main {
+        width: calc(100% - 32px);
+        position: relative;
+        left: 0px;
+        top: 42px;
+        margin-top: 0px;
+    }
+
+    #ebook-includes #viewer {
+        width: 92%;
+        min-width: 1px;
+
+        margin: 2%;
+        padding: 2%;
+    }
+
+    #ebook-includes #opener {
+        position: absolute;
+        top: 0;
+        right: 6%;
+        padding: 10px 20px;
+        stroke: #E2E2E2;
+        fill: #E2E2E2;
+    }
+}
+
+
+
+
+/* === ALONE EDITS =========== */
+
+
+#ebook-includes #ebook-main {
+    width: calc(100% - 200px);
+}
+
+#ebook-includes #opener {
+    right: 45px;
+}
+
+

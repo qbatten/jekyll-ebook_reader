@@ -1,7 +1,48 @@
+@font-face {
+    font-family: "Latin Modern";
+    font-weight: normal;
+    font-style: normal;
+    src: url("/assets/fonts/lmroman12-regular.otf"),
+        url("/assets/fonts/lmroman12-regular.otf")
+}
+
+@font-face {
+    font-family: "Latin Modern";
+    font-weight: bold;
+    font-style: normal;
+    src: url("/assets/fonts/lmroman12-bold.otf"),
+        url("/assets/fonts/lmroman12-bold.otf")
+}
+
+@font-face {
+    font-family: "Latin Modern";
+    font-weight: normal;
+    font-style: italic;
+    src: url("/assets/fonts/lmroman12-italic.otf"),
+        url("/assets/fonts/lmroman12-italic.otf")
+}
+
+@font-face {
+    font-family: "Latin Modern Sans";
+    font-weight: normal;
+    font-style: normal;
+    src: url("/assets/fonts/lmsans12-regular.otf"),
+        url("/assets/fonts/lmsans12-regular.otf")
+}
+
+@font-face {
+    font-family: "Latin Modern Sans";
+    font-weight: normal;
+    font-style: italic;
+    src: url("/assets/fonts/lmsans12-oblique.otf"),
+        url("/assets/fonts/lmsans12-oblique.otf")
+}
+
+
 body {
     font-size: 1em;
     line-height: 1.33em;
-    font-family: 'Times New Roman', 'Georgia', serif;
+    font-family: 'Latin Modern', 'Times New Roman', 'Georgia', serif;
     font-variant-numeric: oldstyle-nums;
     max-width: 100%;
     background-color: rgb(255, 255, 255);
@@ -10,7 +51,7 @@ body {
 p {
     padding: 4px 0px;
     margin: 0px;
-    font-family: 'Times New Roman', 'Georgia', serif;
+    font-family: 'Latin Modern', 'Times New Roman', 'Georgia', serif;
 }
 
 p.indent, p.nonindent {
