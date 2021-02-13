@@ -76,6 +76,8 @@ GEM
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.4.1)
       parser (>= 2.7.1.5)
+    rubocop-rake (0.5.1)
+      rubocop
     ruby-progressbar (1.11.0)
     safe_yaml (1.0.5)
     sassc (2.4.0)
@@ -92,6 +94,7 @@ DEPENDENCIES
   jekyll-ebook_reader!
   rake (~> 13.0)
   rubocop (~> 1.7)
+  rubocop-rake
 
 BUNDLED WITH
    2.2.9
