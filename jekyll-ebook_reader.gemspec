@@ -30,6 +30,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "fileutils", ">= 1.1.0", "<= 1.5.0"
   spec.add_dependency "jekyll", ">= 3.0", "< 5.0"
 
-  spec.add_development_dependency "bundler"
-  spec.add_development_dependency "rubocop-rake"
+  spec.add_development_dependency "bundler", ">= 1.17.2", "<= 2.2.9"
+  spec.add_development_dependency "rubocop-rake", ">=0.1.1", "<= 0.5.1"
 end
