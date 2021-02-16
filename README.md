@@ -4,7 +4,7 @@ This plugin allows you to embed eBooks in your site on any page or post!
 
 It uses [EPUB.js](http://futurepress.org/) to do so.
 
-You can see a [live demo here](https://www.quinnbatten.com/jekyll-ebook-reader-example) as well!
+You can see a [live demo here](https://www.quinnbatten.com/jekyll-ebook-reader-example.html) as well!
 
 ## Installation
 
