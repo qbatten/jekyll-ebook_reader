@@ -64,6 +64,10 @@ Gosh this is my favorite book!!
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/qbatten/jekyll-ebook_reader.
 
+## Acknowledgments
+
+EPUB.js is an awesome library and I'm really grateful for the work they do! This plugin is really just a simple wrapper around that library that makes it easy to use with Jekyll. The JavaScript code used here is based closely on epubjs's demo code, with some changes made for aesthetics and compatibility with the layout I chose.
+
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
