@@ -59,15 +59,13 @@ Gosh this is my favorite book!!
 ```
 
 
+## Troubleshooting & Contributing
 
-## Contributing
+Bug reports and pull requests are welcome on GitHub at [github.com/qbatten/jekyll-ebook_reader](https://github.com/qbatten/jekyll-ebook_reader).
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/qbatten/jekyll-ebook_reader.
+## Acknowledgments & License
 
-## Acknowledgments
+EPUB.js is an awesome library and you should check them out! This plugin is really just a simple wrapper around their hypothesis-reader library that makes it easy to use with Jekyll. The JavaScript code used here is based closely on epubjs's demo code, with some small changes made for aesthetics and compatibility with the layout I chose. 
 
-EPUB.js is an awesome library and I'm really grateful for the work they do! This plugin is really just a simple wrapper around that library that makes it easy to use with Jekyll. The JavaScript code used here is based closely on epubjs's demo code, with some changes made for aesthetics and compatibility with the layout I chose.
+See LICENSE.md for details on licensing.
 
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
